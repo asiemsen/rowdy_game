@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://x648ie0p5jbq"]
+[gd_scene load_steps=5 format=3 uid="uid://x648ie0p5jbq"]
 
+[ext_resource type="Script" path="res://Scenes/rock_Large.gd" id="1_24wjv"]
 [ext_resource type="Texture2D" uid="uid://coc1w77ov1xbq" path="res://icon.svg" id="1_g158y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dcpse"]
@@ -8,6 +9,7 @@
 size = Vector2(26, 26)
 
 [node name="rock_Large" type="RigidBody2D"]
+script = ExtResource("1_24wjv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_dcpse")
