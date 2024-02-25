@@ -11,6 +11,8 @@ size = Vector2(2515, 160)
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 position = Vector2(924, 967)
+collision_layer = 3
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2(-46.5, 17)
@@ -25,3 +27,4 @@ texture = ExtResource("1_iowxw")
 position = Vector2(588, 543)
 
 [node name="rock_Large" parent="." instance=ExtResource("3_08ghf")]
+position = Vector2(1026, 699)

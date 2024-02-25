@@ -15,7 +15,6 @@ var current_jumps = 1
 
 func _physics_process(delta):
 	var input_dir: Vector2 = input()
-	print(input_dir)
 	if input_dir != Vector2.ZERO:
 		accelerate(input_dir) 
 		
