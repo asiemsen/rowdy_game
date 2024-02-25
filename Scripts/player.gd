@@ -24,10 +24,10 @@ func _physics_process(delta):
 		add_friction()
 		#play slowdown
 	player_movement()
-	jump(delta)
+	jump()
 	
 	if (!is_on_floor()):
-		velocity.y -= gravity
+		velocity.y -= gravity 
 	
 func input() -> Vector2:
 	var input_dir = Vector2.ZERO
@@ -50,7 +50,7 @@ func player_movement():
 	
 #func play_animation():
 	#pass
-func jump(delta):
+func jump():
 	if is_on_floor():
 		if Input.is_action_just_pressed("jump"):
 			velocity.y = jump_power
