@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bmy1tqsm7lklg"]
+[gd_scene load_steps=5 format=3 uid="uid://bmy1tqsm7lklg"]
 
-[ext_resource type="PackedScene" uid="uid://do4jtkh0pyimi" path="res://Scenes/player.tscn" id="1_fvxv5"]
+[ext_resource type="PackedScene" uid="uid://drp0m4yx3jdia" path="res://Scenes/player.tscn" id="1_fvxv5"]
 [ext_resource type="Texture2D" uid="uid://coc1w77ov1xbq" path="res://icon.svg" id="1_iowxw"]
+[ext_resource type="PackedScene" uid="uid://x648ie0p5jbq" path="res://Scenes/rock_Large.tscn" id="3_08ghf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vmasf"]
 size = Vector2(2515, 160)
@@ -13,7 +14,6 @@ position = Vector2(924, 967)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2(-46.5, 17)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_vmasf")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
@@ -23,3 +23,5 @@ texture = ExtResource("1_iowxw")
 
 [node name="player" parent="." instance=ExtResource("1_fvxv5")]
 position = Vector2(588, 543)
+
+[node name="rock_Large" parent="." instance=ExtResource("3_08ghf")]
